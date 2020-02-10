@@ -1,0 +1,82 @@
+*If familiar with java, you make skip directly to line 60*
+
+To create a tic tac toe game, first we must understand how tic tac toe works.
+It's a two player game, player one being O, and player 2 being X.
+To win, we must get three of our sybmols in a row, either horizontally, vertically or diaganolly.
+
+So how do we start programing something like this.
+
+Before we do anything, we must first make a project folder, so go to file, new, java project.
+You can leave everything as is, just make a name for it and click finish.
+
+
+First step would be to make runnable code.
+To make code run in java, we need something called a main method.
+This main method is the start of our code.
+
+The way we're gonna make our tic tac toe is by making a start up screen. 
+It's gonna be a simple frame, mainly to allow us to understand how making GUI's in java works.
+In this screen we are gonna need a Jframe to display our code, and a button, so when we click the button, our game starts
+ 
+ To simplify our apporach to developing this code, we're going to put the main method in it's own class.
+ Not only does this break down the code, but it will also help give an understanding of how objects and classes work in coding
+ 
+ In our template code, we have a class called main that only calls the main method (which mentioned earlier is a required method to run code in java)/
+ 
+ To make this method, right click on the java project (should be on the left under package explorer or project explorer), and go to new, class.
+ Leave everything as is and just add the class name. By conviention, the name usually starts with an uppercase.
+ (If you can not find your java project, go to the top of the screen, click WIndow, Perspective, java.)
+ 
+ Now, before we continue, you have to have a basic understanding of how classes work.
+ A class is like a blueprint. For right now, all you need to know is a class is where our information are stored. 
+ We access this information through an object.
+ An object is created by ClassName anyname= new ClassName(), any name represents what you want to name your object.
+However we do not always need to create an object to access a class. A class has information that are called static.
+This information can be accessed by writing the classname, a dot and then the name of the information. (example, ClassName.Name)
+
+Now its time to create our start up class.
+Do the same thing as earlier, right click, new, class
+In this class we initilaize 2 variables, our startFrame and startButton.
+We declare them in the constructor, which is written by, public ClassName()
+
+Most of the lines are commented by what they do, any questions, please feel free to look at our java.swing notes page
+
+To go from the startup Screen to the Game Screen when the button is clicked, we have to give the button something called an action listener.
+For now , just follow the stucture of the action listener. We will create a notes page for actionListeners later on.
+
+All you need to know for now is that whatever is inside this method will be what happens when the button is pressed.
+
+		NameOfButton.addActionListener(new ActionListener() //An action Listener just activates when the button is pressed
+		{  
+			public void actionPerformed(ActionEvent e)
+			{  
+				
+					
+			}  
+		});
+
+_____________________________________________________________________________________________
+
+Time for tic tac toe
+ 
+ The first thing we need is a class to store all our information.
+ Who's turn it is, what letters are on the board, if their's a winner and if the game is over.
+ 
+ To do this, lets make an essential class, that will have all our essesntials.
+ 
+ //I believe most the essesntial class is straight foward with the comments given.
+ 
+ 
+
+Now for our final class.
+
+The drawing class.
+
+This class draws the board, we will need the JFrame, a jpanel and an array of buttons, 3 by 3.
+ 
+ 
+
+
+ 
+ 
+ 
